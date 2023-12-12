@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>My Wabsite</title>
+    
+</head>
+
+<body>
+    <!-- header-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero"></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburage">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Services">Services</a></li>
+                        <li><a href=".//" target="_blank" data-after="">Portfolio</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        <li><a href="./login.html" target="_blank" data-after="Login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    <!-- End Heandar -->
+
+    <!-- Hero Seclation -->
+    <section id="hero">
+        <marquee class="blink"> Well Come to My-Website</marquee>
+        <div class="hero container">
+            
+            <div>  
+                <h1>Hay,<span></span></h1>
+                <h1> I'm<span></span></h1>
+                <h1>Maharab Hosen<span></span></h1>
+                <a href="#projects" type="button" class="cta">Web Developer in bangladesh</a>
+            </div>
+            
+        </div>
+    </section>
+    <!--End-->
+
+    <!-- audio part -->
+    <!-- <div class="sam">
+        <button type="button"><a href="../Main_Website/a/audio.html" target="_blank"> Audio </a></button> / <button type="button"><a href="../Main_Website/v/video.html" target="_blank">Anumation Video </a></button>
+    </div> -->
+
+    <!---------------------------------------- Video  slide part st-------------------------------------->
+ 
+
+    <h2 class="Text">Slide Video</h2>
+    <div class="video">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <video controls >
+              <source src="./Tumi Bihone .mp4" type="video/mp4">
+           </video>
+           <div class="text">Tumi Bihone</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <video controls >
+            <source src="./Maheroo_Maheroo___Super_Nani___Sharman_Joshi___Shweta_Kumar__Shreya_Ghoshal___Sanjeev_Darshan(720p).mp4" type="video/mp4">
+         </video>
+          <div class="text">Maheroo_Maheroo</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <video controls >
+            <source src=".351206707__n.mp4" type="video/mp4">
+         </video>
+          <div class="text">Story</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <video controls >
+              <source src="./Amar kono bundo nei.mp4" type="video/mp4">
+           </video>
+            <div class="text">Story 2</div>
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if(n > slides.length) {
+            slideIndex = 1
+          }
+          if(n < 1) {
+            slideIndex = slides.length
+          }
+          for(i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for(i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      </div>
+
+      <!------------------------------ Video part end------------------------------------------- -->
+
+    <!-- service-->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Serv<span>i</span>ces</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
+            </div>
+
+            <div class="service-bottom">
+                <div class="service-item">
+                    <div class="icon"><img src="i/icons8-service-30.png" /></div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><img src="i/icons8-service-30.png" /></div>
+                    <h2>Web Developer </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="icon"><img src="i/icons8-service-30.png" /></div>
+                    <h2>Digital Marketeting</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 1</h1>
+                        <a href="/Project 1/blog.html" target="_blank"><h2>Blooger Wabsite</h2></a>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
+                            animi, fugit architecto voluptatum odit et!</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="i/Project1.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 2</h1>
+                        <a href="/Project 2/animation.html" target="_blank"><h2>Name Animation</h2></a>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
+                            animi, fugit architecto voluptatum odit et!</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="i/project2.png" alt="img">
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                        <a href="/Project 3/index.html" target="_blank"><h2>Animation</h2></a>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
+                            animi, fugit architecto voluptatum odit et!</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="i/project3.png" alt="img">
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                        <h2>Coding is Love 04</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat
+                            animi, fugit architecto voluptatum odit et!</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="i/discussing-architecture-stuff-is-awlays-a-challenge.jpeg" alt="img">
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="i/my.jpg" alt="img">
+                </div>
+            </div>
+
+            <div class="col-right">
+                <h1 class="section-title">About <span>me</span></h1>
+                <h2>Front End Developer</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum
+                    omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
+                <a href="https://drive.google.com/file/d/13-1q_QyXQghfMjOstWnGdDrHhN2y2ooy/view?usp=drive_link" target="_blank" class="cta">Download Resume</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="contact-items">
+
+                <div class="contact-item">
+                    <div class="icon"><img src="i/icons8-phone.gif" /></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+88 0158 628 2609</h2>
+                        <h2>+88 0177 559 6197</h2>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon"><img src="i/icons8-gmail.gif" /></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>maharabhosen365@gmail.com</h2>
+                        <h2>maharabhosen17@gmail.com</h2>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon"><img src="i/address.gif" /></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>Mirpur-02, Dhaka, Bangladesh</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>M</span>aha<span>ra</span>b<span> </span><span>Ho</span>se<span>n</span></h1>
+            </div>
+            <h2>Complete My Wabsite</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="https://www.facebook.com/maharab.hosen.14" target="_blank"><img src="i/icons8-facebook-48.png" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://twitter.com/maharab121" target="_blank"><img src="i/icons8-twitter-48.png"></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://github.com/Maharab2134" target="_blank"><img src="i/icons8-github.gif" /></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/maharab-hosen-26aa33229/" target="_blank"><img src="i/icons8-linkedin-48.png" /></a>
+                </div>
+                <div class="gotopbtn">
+                    <a class="" href="#"> <i class="fas fa-arrow-up"></i> </a>
+                </div>
+            </div>
+            <p><b>Copyright © 2023 Maharab. All rights reserved</b></p>
+            
+        </div>
+    </section>
+    <!-- End Footer -->
+    
+    <!-- Start Whatsapp -->
+    <a href="https:/wa.me/+8801586282609"  target="_blank" class="whatsapp_float"> <img src="i/icons8-whatsapp.gif"></a>
+    <!-- End Whatsapp -->
+</body>
+</html>

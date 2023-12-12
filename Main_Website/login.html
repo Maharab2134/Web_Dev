@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="from-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="registar()">Registar</button>
+            </div>
+            <div class="social-icons">
+               <a href="https://web.facebook.com/" target="_blank"><img src="./icons8-facebook-64.png"></a>
+               <a href="https://accounts.google.com/" target="_blank"> <img src="./icons8-google-48.png"></a>
+               <a href="http://www.twitter.com/" target="_blank" ><img src="./icons8-twitter-64.png" alt="" srcset=""></a>
+          </div>
+          <form id="login" class="input-group">
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter your Password" required>
+            <input type="checkbox" class="chech-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+
+          <form id="registar" class="input-group">
+            <input type="text" class="input-field" placeholder="Name" required>
+            <input type="number" class="input-field" placeholder="Phone Number" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+           <button type="submit" class="submit-btn">Registar</button>
+          </form>
+       </div>
+   </div>
+
+   <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("registar");
+    var z = document.getElementById("btn");
+
+    function registar(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+   </script>
+
+</body>
+</html>

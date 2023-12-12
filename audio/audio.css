@@ -1,0 +1,24 @@
+.Sojib{
+    text-align: center;
+    padding-top : 70px;
+    font-size: 25px;
+    color: white;
+}
+
+.bc{
+    background-color: darkgrey;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+.audio{
+    
+    text-align:center ;
+    height: 1px;
+    padding-top: 00px;
+}
+.audio-1{
+    text-align:center ;
+    height: 1px;
+    padding-top: 150px;
+}
